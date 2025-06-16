@@ -28,9 +28,9 @@ def app():
 
     with col2:
         # Gunakan path relatif, agar bisa dibaca di Streamlit Cloud
-        image_path = os.path.join(os.path.dirname(__file__), "pencil.png")
+        image_path_2 = os.path.join(os.path.dirname(__file__), "emoticon.png")
 
-        with open(image_path, "rb") as img_file:
+        with open(image_path_2, "rb") as img_file:
            img_base64 = base64.b64encode(img_file.read()).decode()
 
         st.markdown(
