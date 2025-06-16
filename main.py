@@ -15,11 +15,9 @@ st.set_page_config(
 )
 
 
-# Ubah path ke lokasi gambarmu
-image_path = r"C:\Users\Cut Azimah - Iffah\skripsweet\pencil.png"
+image_path_2 = os.path.join(os.path.dirname(__file__), "pencil.png")
 
-# Baca gambar dan ubah ke base64 agar bisa disisipkan dalam HTML
-with open(image_path, "rb") as img_file:
+with open(image_path_2, "rb") as img_file:
     img_base64 = base64.b64encode(img_file.read()).decode()
 
 # HTML dan CSS untuk menampilkan gambar kecil di samping judul
