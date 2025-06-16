@@ -1,6 +1,5 @@
 streamlit
 Pillow
-base64
 pandas
 numpy
 nltk
