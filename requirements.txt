@@ -1,0 +1,16 @@
+streamlit
+Pillow
+base64
+pandas
+numpy
+nltk
+Sastrawi
+translate
+joblib
+scikit-learn
+emoji
+translate
+plotly
+openpyxl
+streamlit-option-menu
+
