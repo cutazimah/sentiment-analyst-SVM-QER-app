@@ -33,7 +33,7 @@ def app():
         with open(image_path, "rb") as img_file:
            img_base64 = base64.b64encode(img_file.read()).decode()
 
-            st.markdown(
+        st.markdown(
                 f"""
         <style>
         .center-image {{
