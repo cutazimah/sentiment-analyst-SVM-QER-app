@@ -27,9 +27,11 @@ def app():
             unsafe_allow_html=True)
 
     with col2:
+        # Gunakan path relatif, agar bisa dibaca di Streamlit Cloud
+        image_path = os.path.join(os.path.dirname(__file__), "pencil.png")
 
-        with open("emotional.png", "rb") as img_file:
-            img_base64 = base64.b64encode(img_file.read()).decode()
+        with open(image_path, "rb") as img_file:
+           img_base64 = base64.b64encode(img_file.read()).decode()
 
             st.markdown(
                 f"""
