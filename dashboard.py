@@ -29,7 +29,7 @@ def app():
 
     with col2:
         # Gunakan path relatif, agar bisa dibaca di Streamlit Cloud
-        image_path_2 = os.path.join(os.path.dirname(__file__), "emoticon.png")
+        image_path_2 = os.path.join(os.path.dirname(__file__), "emotional.png")
 
         with open(image_path_2, "rb") as img_file:
            img_base64 = base64.b64encode(img_file.read()).decode()
